@@ -1,3 +1,4 @@
+export default taskCompleted;
 const taskCompleted = (e, items) => {
   const complete = e.target;
   items = [...JSON.parse(localStorage.getItem('items'))];
@@ -10,5 +11,3 @@ const taskCompleted = (e, items) => {
   }
   localStorage.setItem('items', JSON.stringify(items));
 };
-
-export default taskCompleted;
